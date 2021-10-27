@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="cadastro.png" type="image/x-icon">
+</head>
+<body>
+    <form action="" method=""> <!-- usar sempre a tag form de início p conteúdo do formulário -->
+        <fieldset>
+            <h1>Entre gratuitamente</h1>
+            <div class="campo">
+                <label for="email"></label> <!-- referencia algo do input-->
+                <input type="email" name="e-mail" placeholder="Email"> <!-- o for tem que ser o mesmo id do input -->
+            </div> <!-- placeholder fica dentro da caixa de input -->
+
+            <div class="camposenha">
+                <label for="senha"></label>
+                <input type="password" name="password" placeholder="Senha">
+            </div>
+
+            <a href="pagina2.html" target="_blank"><input type="button" value="Entrar" id="botao" onclick="entrar()"></a>
+            <!-- o botão não estava funcionando p ir p outra página se colocasse apenas a tag <button> envelopada na tag <a>-->
+        </fieldset>
+    </form>
+    <script> // nao esta funcionando
+        var ok = window.document.getElementById('botao')
+        ok.addEventListener('mouseenter', entrar)
+        ok.addEventListener('mouseout', sair)
+        //ok.addEventListener('click', clicar)
+        // os que estão dentro de ' ' são tipos de eventos; e depois está o nome da função que você denominou
+
+        function entrar() {
+            ok.innerText = 'Será que está tudo certo mesmo?'
+        }
+        /* function clicar {
+            ok.innerText = 
+        } */
+        function sair() {
+            ok.innerText = 'Concluído'
+        }
+    </script>
+</body>
+</html>

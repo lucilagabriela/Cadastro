@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, hsla(60, 100%, 50%, 0.500), hsl(39, 100%, 50%, 0.500), hsl(0, 100%, 50%, 0.500), hsl(240, 100%, 50%, 0.500), hsl(120, 100%, 25%, 0.500));
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+}
+
+fieldset {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 40px;
+    /*margin-top: 160px; /* retirar a personalização e ajeitar direito */
+}
+
+input {
+    width: 410px;
+    height: 30px; /* ou padding: .px {qual a diferença??} */
+    outline: none; /* tira a linha de fora ao tocar no campo */
+}
+
+.camposenha {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+input#botao {
+    /*width: 410px;
+    height: 33px;*/
+    text-decoration: none;
+    padding: 0;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #fff;
+    border: 1px solid rgba(37, 25, 197, 0.795);
+    background-color: rgba(37, 25, 197, 0.795);
+    cursor: pointer; /* muda a setinha ao passar por cima */
+}
+
+#botao:hover {
+    background-color: rgb(129, 125, 192);
+    color: rgb(37, 25, 197);
+}
